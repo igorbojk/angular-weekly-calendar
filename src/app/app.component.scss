@@ -1,0 +1,62 @@
+.calendar{
+  &__container{
+    background: lightgray;
+  }
+  &__navigation{
+    background: lightcoral;
+    height: 64px;
+  }
+  &__days-header{
+    height: 86px;
+    padding-left: 48px;
+    display: flex;
+    .days-item{
+      background: lightgreen;
+      border-left: gray 1px solid;
+      flex: 1 1 auto;
+      padding: 8px;
+      .day{
+        font-size: 12px;
+      }
+      .number{
+        font-size: 48px;
+      }
+    }
+  }
+  &__days-body{
+    max-height: calc(100vh - 150px);
+    overflow-x: auto;
+    overflow-y: scroll;
+    display: flex;
+    align-items: flex-start;
+  }
+  &__hours{
+    background: lightsalmon;
+    width: 48px;
+  }
+  &__days-content{
+    flex: 1 1 auto;
+    max-width: calc(100% - 48px);
+    background: lightseagreen;
+  }
+
+  .half-an-hour{
+    height: 24px;
+    border-bottom: solid 1px gray;
+  }
+
+  .hour{
+    height: 48px;
+    text-align: center;
+    position: relative;
+    span{
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+}
