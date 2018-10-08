@@ -2,7 +2,11 @@
   <div class="calendar__container">
 
     <div class="calendar__navigation">
-      тута кнопки
+      <div class="button-row">
+        <button mat-mini-fab color="primary" (click)="prevWeek()"> < </button>
+        <button mat-mini-fab color="accent" (click)="nextWeek()"> > </button>
+
+      </div>
     </div>
 
     <div class="calendar__days-header">
